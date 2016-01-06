@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
   req.get(url, function(error, response, body) {
     if (!error && response.statusCode == 200) {
       console.log(body);
+      res.render('index', { title: 'Feedly' })
     } else {
       console.log(response.statusCode);
     }
