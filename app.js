@@ -46,9 +46,9 @@ app.get('/searching', function(req, res) {
     body = JSON.parse(body);
     var msg = [];
 
-
-    if (body.results === []) {
-      msg = 'No results found.';
+    if (!body) {
+      msg.push('No results found. Try again.');
+      console.log(body.results == []);
     } else {
       for (i in body.results) {
         var velocity = body.results[i].velocity;
@@ -97,7 +97,6 @@ if (app.get('env') === 'development') {
   });
 }
 
-
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
@@ -107,7 +106,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
-
 
 module.exports = app;
