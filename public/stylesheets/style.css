@@ -1,8 +1,23 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#search {
+  text-align: center;
+  width:500px;
+  height: 70px;
+  font-size:3.5em;
+  border-radius:8px;
 }
 
-a {
-  color: #00B7FF;
+table {
+  padding: 20px;
+  color: rgb(45, 45, 57);
+  font-family: monospace;
+  border: 1px solid #999;
+}
+
+.tag {
+  text-align: left;
+}
+
+.res {
+  text-align: left;
+  padding-left: 30px;
 }

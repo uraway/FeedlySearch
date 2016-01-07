@@ -1,4 +1,6 @@
 var express = require('express');
+var $ = require('jQuery');
+
 var router = express.Router();
 
 /* GET home page. */
