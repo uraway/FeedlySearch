@@ -62,7 +62,7 @@ app.get('/searching', function(req, res) {
         msg.push( "<table><tbody>" +
                   "<tr><td class='tag'> results:</td><td class='res'> No."  + i +           "<td></tr>" +
                   "<tr><td class='tag'> velocity:</td><td class='res'> " + velocity +       "</td></tr>" +
-                  "<tr><td class='tag'> website:</td><td class='res'> " + website +         "</td></tr>" +
+                  "<tr><td class='tag'> website:</td><td class='res'>" + website +         "</td></tr>" +
                   "<tr><td class='tag'> curated:</td><td class='res'> " + curated +         "</td></tr>" +
                   "<tr><td class='tag'> subscribers:</td><td class='res'> " + subscribers + "</td></tr>" +
                   "<tr><td class='tag'> feed id:</td><td class='res'> " + feedId +          "</td></tr>" +
